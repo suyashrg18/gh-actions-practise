@@ -1,0 +1,18 @@
+name: First workflow # Name of the workflow
+on: workflow_dispatch #event or events that should trigger the workflow run
+
+#workflow_dispatch is a feature of GitHub Actions that allows you to trigger a 
+#specific workflow run on-demand, without the need for a code push or pull request. 
+#without the need for a code push or pull request.
+
+jobs:
+  first-job: #name of the job
+    runs-on: ubuntu-latest #name on the runner where the workflow will run
+#Runners are the machines that execute jobs in a GitHub Actions workflow
+    steps:
+      - name: Print greeting
+      - run: echo "Hello World"
+      - name: Print Goodbye
+      - run : echo "Good Bye World"
+
+
