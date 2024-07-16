@@ -8,11 +8,11 @@ on: workflow_dispatch #event or events that should trigger the workflow run
 jobs:
   first-job: #name of the job
     runs-on: ubuntu-latest #name on the runner where the workflow will run
-#Runners are the machines that execute jobs in a GitHub Actions workflow
+  #Runners are the machines that execute jobs in a GitHub Actions workflow
     steps:
       - name: Print greeting
-      - run : echo "Hello World"
+        run : echo "Hello World"
       - name: Print Goodbye
-      - run : echo "Good Bye World"
+        run : echo "Good Bye World"
 
 
