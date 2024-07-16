@@ -11,7 +11,7 @@ jobs:
 #Runners are the machines that execute jobs in a GitHub Actions workflow
     steps:
       - name: Print greeting
-      - run: echo "Hello World"
+      - run : echo "Hello World"
       - name: Print Goodbye
       - run : echo "Good Bye World"
 
